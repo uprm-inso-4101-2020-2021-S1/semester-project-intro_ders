@@ -12,22 +12,34 @@
 
 </head>
 <body>
-    <div class="jumbotron" style="display:block; margin-left:auto; margin-right:auto; margin-top:150px;">
-        <h1 class="display-4 text-center" style="font-family: 'Shadows Into Light';font-size: 52px;">Oficina de Registraduria Virtual</h1>
-        <p class="lead text-center">
-            A través de la Oficina de Registraduría Virtual los estudiantes activos,
-            como egresados de la UPRM tendrán la oportunidad de realizar todas las solicitudes electrónicamente.
-            Además, podrá verificar el estado de la solicitud realizada.
-        </p>
-        <hr class="my-4">
-        <p class="text-center">
-            <a class="btn btn-lg" style="background-color: #69c983" href="#" role="button">Pago en Línea</a>
-            <a class="btn btn-lg" style="background-color: #69c983" href="#" role="button">Estado de Solicitud</a>
-            <a class="btn btn-lg" style="background-color: #69c983" href="#" role="button">Pasos a Seguir</a>
+    <form method="post">
+        <div class="jumbotron" style="display:block; margin-left:auto; margin-right:auto; margin-top:150px; margin-bottom:25%">
+            <h1 class="display-4 text-center" style="font-family: 'Shadows Into Light';font-size: 52px;">Oficina de Registraduria Virtual</h1>
+            <p class="lead text-center">
+                A través de la Oficina de Registraduría Virtual los estudiantes activos,
+                como egresados de la UPRM tendrán la oportunidad de realizar todas las solicitudes electrónicamente.
+                Además, podrá verificar el estado de la solicitud realizada.
+            </p>
+            <hr class="my-4">
+            <p class="text-center">
+                <a class="btn btn-lg" style="background-color: #69c983" href="https://www.uprm.edu/registrar/services/pago.php" role="button">Pago en Línea</a>
+                <a class="btn btn-lg" style="background-color: #69c983" href="#" role="button">Estado de Solicitud</a>
+                <a class="btn btn-lg" style="background-color: #69c983" href="#" role="button">Pasos a Seguir</a>
 
 
-        </p>
-    </div>
+            </p>
+
+
+            <div class="display-4" style="text-align:center">
+                <input class="user" type="text" asp-for="@Model.idImput" value=" "
+                       style="font-size:25px; border: 2px solid black;
+               border-radius: 2px;" required />
+
+                <button type="submit" style=" margin-left:20px; padding-top:20px;" class="btnDsg"><b>Login</b></button>
+
+            </div>
+
+</form>
 
 </body>
 </html>

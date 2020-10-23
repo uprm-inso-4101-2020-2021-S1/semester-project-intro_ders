@@ -10,16 +10,10 @@ namespace intro_durs.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
+        public RedirectResult OnGet()
         {
-            _logger = logger;
+            return Redirect("/Application/HomePage");
         }
 
-        public void OnGet()
-        {
-
-        }
     }
 }
