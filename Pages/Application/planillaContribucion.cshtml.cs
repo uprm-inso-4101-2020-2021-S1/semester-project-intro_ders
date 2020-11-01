@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace intro_durs.Pages.Application
 {
-    public class progresoAcademico : PageModel
+    public class planillaContribucion : PageModel
     {
         public void OnGet()
         {
