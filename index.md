@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Welcome to Introders Project
 
-You can use the [editor on GitHub](https://github.com/uprm-inso-4101-2020-2021-S1/semester-project-intro_ders/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# INTRODUCTION
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Registraduria office at the University of Puerto Rico in Mayagüez is in charge of ensuring and guaranteeing the 3 points mentioned below to active and inactive students of the university:
+ 
+•   	Maintain and keep confidential academic records in accordance with applicable regulations.
+•   	Easy access to the services offered.
+•   	Efficient enrollment and graduation processes.
+ 
+Due to the recent situation with the COVID-19, these mentioned points have been affected. The reason is that 14 of the 16 requests offered by this office cannot be completed electronically. Currently, the process to submit a request is through PDF documents located on the Registraduría’s web page and sent using email, Fax, or PO box. The method used to send the request does not guarantee that the request will be received, and the student cannot verify the status of the request. Considering that these requirements are very important for academic progress and performance, this undoubtedly will affect the college community.
+ 
 
-### Markdown
+### Contributors
+1.Daniel Berrios
+2.Angel Ortiz Rodriguez
+3.Arnaldo Villarubia Figueroa
+4.Zulmarie Jiménez Hernández 
+5.Sebastián Merced Adorno
+6.Edwin Martinez Torres
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Video Promocional
+[Video promocional] (https://youtu.be/MQvMxQ1a6og)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/uprm-inso-4101-2020-2021-S1/semester-project-intro_ders/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
