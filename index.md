@@ -21,5 +21,4 @@ Due to the recent situation with the COVID-19, these mentioned points have been 
 6. Edwin Martinez Torres
 
 ### Video Promocional
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MQvMxQ1a6og" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+[!(https://imgur.com/a/MpxGXfK)](https://youtu.be/MQvMxQ1a6og)
