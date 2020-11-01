@@ -12,6 +12,7 @@ Due to the recent situation with the COVID-19, these mentioned points have been 
  
 
 ### Contributors
+-List
 1.Daniel Berrios
 2.Angel Ortiz Rodriguez
 3.Arnaldo Villarubia Figueroa
@@ -20,5 +21,5 @@ Due to the recent situation with the COVID-19, these mentioned points have been 
 6.Edwin Martinez Torres
 
 ### Video Promocional
-[Video promocional] (https://youtu.be/MQvMxQ1a6og)
+![Video promocional](https://youtu.be/MQvMxQ1a6og)
 
