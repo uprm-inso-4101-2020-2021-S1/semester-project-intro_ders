@@ -1,7 +1,6 @@
-## Welcome to Introders Project
+# Welcome to Introders Project
 
-# INTRODUCTION
-
+## Introduction
 The Registraduria office at the University of Puerto Rico in Mayagüez is in charge of ensuring and guaranteeing the 3 points mentioned below to active and inactive students of the university:
  
 * Maintain and keep confidential academic records in accordance with applicable regulations.
