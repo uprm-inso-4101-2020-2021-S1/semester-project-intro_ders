@@ -17,6 +17,8 @@ namespace intro_durs.Pages.Models
         public virtual DbSet<tblForm> tblForm { get; set; }
         public virtual DbSet<tblStudentProgram> tblStudentProgram { get; set; }
 
+        public virtual DbSet<tblPlanillaContribucion> tblPlanillaContribucion { get; set; }
+
         /* STORE PROCEDURES */
         /* INSERT DATA TABLES*/
 
@@ -27,6 +29,21 @@ namespace intro_durs.Pages.Models
             if (!tblForm.Equals(null))
             {
                 this.Add(tblForm);
+                this.SaveChanges();
+                return true;
+            }
+
+
+            return false;
+        }
+
+        public Boolean insertDataPlanillaContribucion(tblPlanillaContribucion tbl)
+        {
+
+
+            if (!tbl.Equals(null))
+            {
+                this.Add(tbl);
                 this.SaveChanges();
                 return true;
             }
