@@ -1,0 +1,201 @@
+﻿@page
+@model intro_durs.Pages.Application.Diferimiento
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+
+
+
+        /*basic reset*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        body {
+            font-family: montserrat, arial, verdana;
+        }
+        /*form styles*/
+        #msform {
+            width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative;
+        }
+
+            #msform fieldset {
+                background: white;
+                border: 0 none;
+                border-radius: 3px;
+                box-shadow: 0 0 15px 1px white;
+                padding: 20px 30px;
+                box-sizing: border-box;
+                width: 80%;
+                margin: 0 10%;
+                /*stacking fieldsets above each other*/
+                position: relative;
+            }
+                /*Hide all except first fieldset*/
+                #msform fieldset:not(:first-of-type) {
+                    display: none;
+                }
+            /*inputs*/
+            #msform input, #msform textarea {
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                width: 100%;
+                box-sizing: border-box;
+                font-family: montserrat;
+                color: #2C3E50;
+                font-size: 20px;
+            }
+            /*buttons*/
+            #msform .action-button {
+                width: 100px;
+                background: #27AE60;
+                font-weight: bold;
+                color: white;
+                border: 0 none;
+                border-radius: 1px;
+                cursor: pointer;
+                padding: 10px 5px;
+                margin: 10px 5px;
+            }
+
+                #msform .action-button:hover, #msform .action-button:focus {
+                    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+                }
+        /*headings*/
+        .fs-title {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .fs-subtitle {
+            font-weight: normal;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <script></script>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+    <form id="msform" method="post">
+
+
+        <!-- fieldsets -->
+        <fieldset>
+            <h1>Solicitud de Copia de Diploma</h1>
+            <p>&nbsp;</p>
+            <label id="studentID" style="margin-left:50px" type="text"></label>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>NOMBRE</label>
+                    <input type="text" class="form-control" id="inputNAME">
+
+                    <label>INICIAL</label>
+                    <input type="text" class="form-control" id="inputINICIAL">
+
+                    <label>CORREO ELECTRÓNICO</label>
+                    <input type="text" class="form-control" id="inputTelefono">
+
+                    <label>CREDITOS MATRICULADOS EN EL SEMESTRE</label>
+                    <input type="number" class="form-control" id="inputCrtMatriculado">
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label>APELLIDO PATERNO </label>
+                    <input type="text" class="form-control" id="inputAPELLIDO">
+
+                    <label>APELLIDO MATERNO</label>
+                    <input type="text" class="form-control" id="inputAPELLIDO2">
+
+
+
+                    <label>TELÉFONO</label>
+                    <input type="text" class="form-control" id="inputEnvio">
+
+                    <label>FECHA PROBABLE DE GRADUACIÓN</label>
+                    <input type="date" class="form-control" id="inputProbDeGrad">
+
+                </div>
+            </div>
+            <label>SEMESTRE(S) ANTERIOR(ES)</label>
+            <input type="text" class="form-control" id="inputSemestresAnteriores" style="height:40px">
+
+            <p>&nbsp;</p>
+            <label>TIPO DE ESTUDIANTE</label>
+            <select class="form-control" id="ActiveOrInactiveDropDown" style="height:50px">
+                <option selected hidden>-Selecione-</option>
+                <option>Activo</option>
+                <option>Inactivo</option>
+            </select>
+            <p>&nbsp;</p>
+
+            <label>PROGRAMA DE ESTUDIO</label>
+
+            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px">
+                <option selected hidden>-Selecione-</option>
+
+            </select>
+
+
+            <p>&nbsp;</p>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+
+                    <label>FIRMA</label>
+                    <input type="text" class="form-control" id="inputAñoNatural">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>FECHA</label>
+                    <input type="date" class="form-control" id="inputCorreo">
+                </div>
+            </div>
+
+
+        </fieldset>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsg">SOMETER</button>
+
+
+    </form>
+
+
+
+    <script>
+
+
+
+    </script>
+</body>
+</html>
