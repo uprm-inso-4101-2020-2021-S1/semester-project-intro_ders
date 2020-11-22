@@ -74,5 +74,25 @@ namespace intro_durs.Pages.Models
         }
 
 
+
+
+        public DbQuery<sptblForm> sptblForm { get; set; }
+
+        public async Task<List<sptblForm>> getTableReports()
+        {
+
+            var query = @"
+                DECLARE @RC int
+
+                EXECUTE @RC = sptblForm";
+
+            var result = await sptblForm.FromSqlRaw(query).ToListAsync();
+
+            return result;
+        }
+
+
+
+
     }
 }
