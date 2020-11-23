@@ -61,7 +61,7 @@ namespace intro_durs.Pages.Application
 
 
 
-        public async Task<IActionResult> OnGetTestPast()
+        public async Task<IActionResult> OnGet()
         {
 
             tblStudentProgram = await _context.tblStudentProgram
@@ -88,7 +88,7 @@ namespace intro_durs.Pages.Application
             FormTable.strEmail = inputEmailSelection;
             FormTable.strPhone = inputPhoneSelection;
             FormTable.strSignature = inputSignatureSelection;
-            FormTable.Date = inputDateSelection;
+            FormTable.strDate = inputDateSelection;
             FormTable.strActiveOrInactive = activeOrInactiveSelection;
             FormTable.strStudentProgram = programaDeEstudioSelection;
 

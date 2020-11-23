@@ -20,6 +20,10 @@ namespace intro_durs.Pages.Models
 
         public virtual DbSet<tblPlanillaContribucion> tblPlanillaContribucion { get; set; }
 
+        public virtual DbSet<tblCopiaDeDiploma> tblCopiaDeDiploma { get; set; }
+
+        public virtual DbSet<tblDiferimiento> tblDiferimiento { get; set; }
+
         /* STORE PROCEDURES */
 
         /* INSERT DATA TABLES*/
@@ -41,7 +45,7 @@ namespace intro_durs.Pages.Models
 
 
         /* STORE PROCEDURES */
-        public DbQuery<spLoginPage> spLoginPage { get; set; }
+        /*public DbQuery<spLoginPage> spLoginPage { get; set; }
 
         public async Task<List<spLoginPage>> getIDNumber(int intID)
         {
@@ -75,7 +79,7 @@ namespace intro_durs.Pages.Models
 
             return result;
         }
-
+        */
 
         public Boolean insertDataPlanillaContribucion(tblPlanillaContribucion tbl)
         {
@@ -92,5 +96,39 @@ namespace intro_durs.Pages.Models
             return false;
         }
 
+        public Boolean insertDataCopiaDeDiploma(tblCopiaDeDiploma tbl)
+        {
+
+
+            if (!tbl.Equals(null))
+            {
+                this.Add(tbl);
+                this.SaveChanges();
+                return true;
+            }
+
+
+            return false;
+        }
+
+
+        public Boolean insertDataDiferimiento(tblDiferimiento tbl)
+        {
+
+
+            if (!tbl.Equals(null))
+            {
+                this.Add(tbl);
+                this.SaveChanges();
+                return true;
+            }
+
+
+            return false;
+        }
+
+
     }
+
+
 }
