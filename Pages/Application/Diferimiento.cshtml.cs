@@ -34,7 +34,7 @@ namespace intro_durs.Pages.Application
         public string inputINICIALSelection { get; set; }
 
         [BindProperty]
-        public string inputAPELLIDOelection { get; set; }
+        public string inputAPELLIDOSelection { get; set; }
 
         [BindProperty]
         public string inputAPELLIDO2Selection { get; set; }
@@ -87,7 +87,7 @@ namespace intro_durs.Pages.Application
 
             tblDiferimiento FormTable = new tblDiferimiento();
 
-            string FullName = inputNAMESelection + " " + inputINICIALSelection + " " + inputAPELLIDOelection + " " + inputAPELLIDO2Selection;
+            string FullName = inputNAMESelection + " " + inputINICIALSelection + " " + inputAPELLIDOSelection + " " + inputAPELLIDO2Selection;
 
 
             FormTable.strFullName = FullName;

@@ -118,32 +118,32 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>NOMBRE</label>
-                    <input type="text" class="form-control" id="inputNAME">
+                    <input type="text" class="form-control" id="inputNAME" asp-for="@Model.inputNAMESelection" required>
 
                     <label>INICIAL</label>
-                    <input type="text" class="form-control" id="inputINICIAL">
+                    <input type="text" class="form-control" id="inputINICIAL" asp-for="@Model.inputINICIALSelection">
 
                     <label>CORREO ELECTRÓNICO</label>
-                    <input type="text" class="form-control" id="inputTelefono">
+                    <input type="text" class="form-control" id="inputCorreo" asp-for="@Model.inputEmailSelection" required>
 
                     <label>GRADO</label>
-                    <input type="text" class="form-control" id="inputGrado">
+                    <input type="text" class="form-control" id="inputGrado" asp-for="@Model.inputDegreeSelection" required> <!--Add ViewBag de tabla de los Degrees-->
 
                 </div>
                 <div class="form-group col-md-6">
                     <label>APELLIDO PATERNO </label>
-                    <input type="text" class="form-control" id="inputAPELLIDO">
+                    <input type="text" class="form-control" id="inputAPELLIDO" asp-for="@Model.inputAPELLIDOSelection" required>
 
                     <label>APELLIDO MATERNO</label>
-                    <input type="text" class="form-control" id="inputAPELLIDO2">
+                    <input type="text" class="form-control" id="inputAPELLIDO2" asp-for="@Model.inputAPELLIDO2Selection" required>
 
 
 
                     <label>TELÉFONO</label>
-                    <input type="text" class="form-control" id="inputEnvio">
+                    <input type="text" class="form-control" id="inputTelefono" asp-for="@Model.inputPhoneSelection" required>
 
                     <label>AÑO DE GRADUACIÓN</label>
-                    <inpput type="number" class="form-control" id="inputAnoDeGraduacion">
+                    <input type="text" class="form-control" id="inputAnoDeGraduacion" asp-for="@Model.inputGradYearSelection" required>
 
                 </div>
             </div>
@@ -154,7 +154,7 @@
             
             <label>PROGRAMA DE ESTUDIO</label>
 
-            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px">
+            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px" asp-for="@Model.programaDeEstudioSelection" asp-items="ViewBag.TblProgramaDeEstudio" required>
                 <option selected hidden>-Selecione-</option>
 
             </select>
@@ -165,11 +165,11 @@
                 <div class="form-group col-md-6">
 
                     <label>FIRMA</label>
-                    <input type="text" class="form-control" id="inputAñoNatural">
+                    <input type="text" class="form-control" id="inputFirma" asp-for="@Model.inputSignatureSelection" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label>FECHA</label>
-                    <input type="date" class="form-control" id="inputCorreo">
+                    <input type="date" class="form-control" id="inputFecha" asp-for="@Model.inputDateSelection" required>
                 </div>
             </div>
 

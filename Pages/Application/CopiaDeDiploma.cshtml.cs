@@ -46,16 +46,21 @@ namespace intro_durs.Pages.Application
         public string inputPhoneSelection { get; set; }
 
         [BindProperty]
-        public string inputSignatureSelection { get; set; }
+        public string inputDegreeSelection { get; set; }
 
-        [BindProperty]
-        public DateTime inputDateSelection { get; set; }
-        
         [BindProperty]
         public string inputGradYearSelection { get; set; }
 
         [BindProperty]
         public string programaDeEstudioSelection { get; set; }
+
+        [BindProperty]
+        public string inputSignatureSelection { get; set; }
+
+        [BindProperty]
+        public DateTime inputDateSelection { get; set; }
+        
+
 
 
 
@@ -73,6 +78,33 @@ namespace intro_durs.Pages.Application
             return Page();
 
         }
-        
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+
+
+            tblCopiaDeDiploma FormTable = new tblCopiaDeDiploma();
+
+            string FullName = inputNAMESelection + " " + inputINICIALSelection + " " + inputAPELLIDOSelection + " " + inputAPELLIDO2Selection;
+
+
+            FormTable.strFullName = FullName;
+            FormTable.strEmail = inputEmailSelection;
+            FormTable.strPhone = inputPhoneSelection; 
+            FormTable.strDegree = inputDegreeSelection;          
+            FormTable.strGradYear = inputGradYearSelection;
+            FormTable.strStudentProgram = programaDeEstudioSelection;
+            FormTable.strSignature = inputSignatureSelection;
+            FormTable.date = inputDateSelection;
+
+            _context.insertDataCopiaDeDiploma(FormTable);
+
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("/Application/HomePage");
+
+        }
+
     }
 }
