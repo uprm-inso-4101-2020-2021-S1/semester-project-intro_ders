@@ -80,6 +80,19 @@ namespace intro_durs.Pages.Models
             return result;
         }
         */
+        public DbQuery<spCopiaDeDiploma> spCopiaDeDiploma { get; set; }
+
+        public async Task<List<spCopiaDeDiploma>> getCopiaDeDiplomaReports()
+        {
+
+            var query = @"
+                DECLARE @RC int
+                EXECUTE @RC = spCopiaDeDiploma";
+
+            var result = await spCopiaDeDiploma.FromSqlRaw(query).ToListAsync();
+
+            return result;
+        }
 
         public Boolean insertDataPlanillaContribucion(tblPlanillaContribucion tbl)
         {
