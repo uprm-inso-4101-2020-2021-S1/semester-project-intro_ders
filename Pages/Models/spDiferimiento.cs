@@ -10,7 +10,7 @@ namespace intro_durs.Pages.Models
         public string strFullName { get; set; }
         public string strEmail { get; set; }
         public string strPhone { get; set; }
-        public string strCredits { get; set; }
+        public int strCredits { get; set; }
         public DateTime gradYear { get; set; }
         public string strSemesters { get; set; }
         public string strActiveOrInactive { get; set; }
