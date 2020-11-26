@@ -94,6 +94,37 @@ namespace intro_durs.Pages.Models
             return result;
         }
 
+        public DbQuery<spDiferimiento> spDiferimiento { get; set; }
+
+        public async Task<List<spDiferimiento>> getDiferimientoReports()
+        {
+
+            var query = @"
+                DECLARE @RC int
+                EXECUTE @RC = spDiferimiento";
+
+            var result = await spDiferimiento.FromSqlRaw(query).ToListAsync();
+
+            return result;
+        }
+
+
+        public DbQuery<spPlanillaContribucion> spPlanillaContribucion { get; set; }
+
+        public async Task<List<spPlanillaContribucion>> getPlanillaContribucionReports()
+        {
+
+            var query = @"
+                DECLARE @RC int
+                EXECUTE @RC = spPlanillaContribucion";
+
+            var result = await spPlanillaContribucion.FromSqlRaw(query).ToListAsync();
+
+            return result;
+        }
+
+
+
         public Boolean insertDataPlanillaContribucion(tblPlanillaContribucion tbl)
         {
 
