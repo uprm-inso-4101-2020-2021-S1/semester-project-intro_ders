@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Pages\certificacionEstudiante" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Images\registraduriaIMG.jpg" />
   </ItemGroup>
 

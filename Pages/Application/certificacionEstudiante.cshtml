@@ -1,13 +1,14 @@
 ﻿@page
-@model intro_durs.Pages.Application.FormModel
+@model intro_durs.Pages.Application.certificacionEstudianteModel
 @{
 }
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title></title>
-
+    
     <style>
 
 
@@ -95,6 +96,14 @@
     <script></script>
 
 
+
+
+
+
+
+
+
+
 </head>
 <body>
 
@@ -104,30 +113,38 @@
 
         <!-- fieldsets -->
         <fieldset>
-            <h1> Solicitud de Certificación de Progreso Académico</h1>
+            <h1>Solicitud de Certificación de Estudiante Regular</h1>
             <p>&nbsp;</p>
-            <label id="studentID" style="margin-left:50px" type="text">@Model.ViewData["studentID"]</label>
+            <label id="studentID" style="margin-left:50px" type="text"></label>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>NOMBRE</label>
-                    <input type="text" class="form-control" id="inputNAME" asp-for="@Model.inputNAMESelection" required>
+                    <input type="text" class="form-control" id="inputNAME">
 
                     <label>INICIAL</label>
 
-                    <input type="text" class="form-control" id="inputINICIAL" asp-for="@Model.inputINICIALSelection">
+                    <input type="text" class="form-control" id="inputINICIAL">
+
+                    <label>CORREO ELECTRÓNICO</label>
+                    <input type="text" class="form-control" id="inputCorreo">
+
                 </div>
                 <div class="form-group col-md-6">
                     <label>APELLIDO PATERNO </label>
-                    <input type="text" class="form-control" id="inputAPELLIDO" asp-for="@Model.inputAPELLIDOSelection" required>
+                    <input type="text" class="form-control" id="inputAPELLIDO">
+
                     <label>APELLIDO MATERNO</label>
-                    <input type="text" class="form-control" id="inputAPELLIDO2" asp-for="@Model.inputAPELLIDO2Selection" required>
+                    <input type="text" class="form-control" id="inputAPELLIDO2">
+
+                    <label>TELÉFONO</label>
+                    <input type="text" class="form-control" id="inputTelefono">
 
                 </div>
             </div>
 
 
             <label>TIPO DE ESTUDIANTE</label>
-            <select class="form-control" id="ActiveOrInactiveDropDown" style="height:50px" asp-for="@Model.activeOrInactiveSelection" required>
+            <select class="form-control" id="ActiveOrInactiveDropDown" style="height:50px">
                 <option selected hidden>-Selecione-</option>
                 <option>Activo</option>
                 <option>Inactivo</option>
@@ -136,22 +153,36 @@
             <p>&nbsp;</p>
             <label>PROGRAMA DE ESTUDIO</label>
 
-            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px" asp-for="@Model.programaDeEstudioSelection" asp-items="ViewBag.TblProgramaDeEstudio" required>
+            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px">
                 <option selected hidden>-Selecione-</option>
 
             </select>
 
-
             <p>&nbsp;</p>
 
+            <div class="form-row">
+
+                <div class="form-group col-md-6">
+                    <label>FIRMA</label>
+                    <input type="text" class="form-control" id="inputFIRMA">
+
+                </div>
+                <div class="form-group col-md-6">
+                    <label>FECHA</label>
+                    <input type="date" class="form-control" id="inputFECHA">
+
+                    <p>&nbsp;</p>
 
 
 
+                </div>
+
+            </div>
         </fieldset>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
-        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;"class="btnDsg">SOMETER</button>
+        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsg">SOMETER</button>
 
 
     </form>
@@ -160,9 +191,8 @@
 
     <script>
 
-  
+
 
     </script>
 </body>
 </html>
-
