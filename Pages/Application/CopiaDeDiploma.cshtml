@@ -1,5 +1,5 @@
-﻿@page
-@model intro_durs.Pages.Application.FormModel
+﻿ @page
+@model intro_durs.Pages.Application.CopiaDeDiploma
 @{
 }
 <!DOCTYPE html>
@@ -95,6 +95,14 @@
     <script></script>
 
 
+
+
+
+
+
+
+
+
 </head>
 <body>
 
@@ -104,36 +112,46 @@
 
         <!-- fieldsets -->
         <fieldset>
-            <h1> Solicitud de Certificación de Progreso Académico</h1>
+            <h1>Solicitud de Copia de Diploma</h1>
             <p>&nbsp;</p>
-            <label id="studentID" style="margin-left:50px" type="text">@Model.ViewData["studentID"]</label>
+            <label id="studentID" style="margin-left:50px" type="text"></label>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>NOMBRE</label>
                     <input type="text" class="form-control" id="inputNAME" asp-for="@Model.inputNAMESelection" required>
 
                     <label>INICIAL</label>
-
                     <input type="text" class="form-control" id="inputINICIAL" asp-for="@Model.inputINICIALSelection">
+
+                    <label>CORREO ELECTRÓNICO</label>
+                    <input type="text" class="form-control" id="inputCorreo" asp-for="@Model.inputEmailSelection" required>
+
+                    <label>GRADO</label>
+                    <input type="text" class="form-control" id="inputGrado" asp-for="@Model.inputDegreeSelection" required> <!--Add ViewBag de tabla de los Degrees-->
+
                 </div>
                 <div class="form-group col-md-6">
                     <label>APELLIDO PATERNO </label>
                     <input type="text" class="form-control" id="inputAPELLIDO" asp-for="@Model.inputAPELLIDOSelection" required>
+
                     <label>APELLIDO MATERNO</label>
                     <input type="text" class="form-control" id="inputAPELLIDO2" asp-for="@Model.inputAPELLIDO2Selection" required>
+
+
+
+                    <label>TELÉFONO</label>
+                    <input type="text" class="form-control" id="inputTelefono" asp-for="@Model.inputPhoneSelection" required>
+
+                    <label>AÑO DE GRADUACIÓN</label>
+                    <input type="text" class="form-control" id="inputAnoDeGraduacion" asp-for="@Model.inputGradYearSelection" required>
 
                 </div>
             </div>
 
 
-            <label>TIPO DE ESTUDIANTE</label>
-            <select class="form-control" id="ActiveOrInactiveDropDown" style="height:50px" asp-for="@Model.activeOrInactiveSelection" required>
-                <option selected hidden>-Selecione-</option>
-                <option>Activo</option>
-                <option>Inactivo</option>
-            </select>
+            
 
-            <p>&nbsp;</p>
+            
             <label>PROGRAMA DE ESTUDIO</label>
 
             <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px" asp-for="@Model.programaDeEstudioSelection" asp-items="ViewBag.TblProgramaDeEstudio" required>
@@ -143,15 +161,24 @@
 
 
             <p>&nbsp;</p>
+            <div class="form-row">
+                <div class="form-group col-md-6">
 
-
+                    <label>FIRMA</label>
+                    <input type="text" class="form-control" id="inputFirma" asp-for="@Model.inputSignatureSelection" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>FECHA</label>
+                    <input type="date" class="form-control" id="inputFecha" asp-for="@Model.inputDateSelection" required>
+                </div>
+            </div>
 
 
         </fieldset>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
-        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;"class="btnDsg">SOMETER</button>
+        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsg">SOMETER</button>
 
 
     </form>
@@ -160,9 +187,8 @@
 
     <script>
 
-  
+
 
     </script>
 </body>
 </html>
-

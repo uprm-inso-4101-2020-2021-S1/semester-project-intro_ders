@@ -1,7 +1,8 @@
 ﻿@page
-@model intro_durs.Pages.Application.FormModel
+@model intro_durs.Pages.Application.planillaContribucion
 @{
 }
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -95,6 +96,14 @@
     <script></script>
 
 
+
+
+
+
+
+
+
+
 </head>
 <body>
 
@@ -104,30 +113,40 @@
 
         <!-- fieldsets -->
         <fieldset>
-            <h1> Solicitud de Certificación de Progreso Académico</h1>
+            <h1>Solicitud de Certificación para la  Planilla de Contribución</h1>
             <p>&nbsp;</p>
-            <label id="studentID" style="margin-left:50px" type="text">@Model.ViewData["studentID"]</label>
+            <label id="studentID" style="margin-left:50px" type="text"></label>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label>NOMBRE</label>
                     <input type="text" class="form-control" id="inputNAME" asp-for="@Model.inputNAMESelection" required>
 
                     <label>INICIAL</label>
+                    <input type="text" class="form-control" id="inputINICIAL" asp-for="@Model.inputINICIALSelection" required>
 
-                    <input type="text" class="form-control" id="inputINICIAL" asp-for="@Model.inputINICIALSelection">
+                    <label>CORREO ELECTRÓNICO</label>
+                    <input type="text" class="form-control" id="inputEmail" asp-for="@Model.inputEmailSelection" required>
+
+
                 </div>
                 <div class="form-group col-md-6">
                     <label>APELLIDO PATERNO </label>
                     <input type="text" class="form-control" id="inputAPELLIDO" asp-for="@Model.inputAPELLIDOSelection" required>
+
                     <label>APELLIDO MATERNO</label>
                     <input type="text" class="form-control" id="inputAPELLIDO2" asp-for="@Model.inputAPELLIDO2Selection" required>
 
+                   
+
+                    <label>TELÉFONO</label>
+                    <input type="text" class="form-control" id="inputPhone" asp-for="@Model.inputPhoneSelection" required>
+
                 </div>
             </div>
-
+            
 
             <label>TIPO DE ESTUDIANTE</label>
-            <select class="form-control" id="ActiveOrInactiveDropDown" style="height:50px" asp-for="@Model.activeOrInactiveSelection" required>
+            <select class="form-control" id="ActiveOrInactiveSelection" style="height:50px" asp-for="@Model.activeOrInactiveSelection" required>
                 <option selected hidden>-Selecione-</option>
                 <option>Activo</option>
                 <option>Inactivo</option>
@@ -136,22 +155,31 @@
             <p>&nbsp;</p>
             <label>PROGRAMA DE ESTUDIO</label>
 
-            <select class="form-control" id="ProgramaDeEstudioeDropDown" style="height:50px" asp-for="@Model.programaDeEstudioSelection" asp-items="ViewBag.TblProgramaDeEstudio" required>
+            <select class="form-control" id="ProgramaDeEstudioeDropdown" style="height:50px" asp-for="@Model.programaDeEstudioSelection" asp-items="ViewBag.TblProgramaDeEstudio" required >
                 <option selected hidden>-Selecione-</option>
 
             </select>
 
 
             <p>&nbsp;</p>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+
+                    <label>FIRMA</label>
+                    <input type="text" class="form-control" id="inputFirma" asp-for="@Model.inputSignatureSelection" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>FECHA</label>
+                    <input type="date" class="form-control" id="inputDate" asp-for="@Model.inputDateSelection" required >
+                </div>
+            </div>
 
 
-
-
-        </fieldset>
+</fieldset>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
 
-        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;"class="btnDsg">SOMETER</button>
+        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsg">SOMETER</button>
 
 
     </form>
@@ -160,9 +188,8 @@
 
     <script>
 
-  
+
 
     </script>
 </body>
 </html>
-

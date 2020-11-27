@@ -1,0 +1,36 @@
+﻿@page
+@model intro_durs.Pages.Application.loginPage
+@{
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
+
+</head>
+<body>
+    <form method="post">
+        <div class="jumbotron" style="display:block; margin-left:auto; margin-right:auto; margin-top:150px; margin-bottom:25%">
+            <h1 class="display-4 text-center" style="font-family: 'Shadows Into Light';font-size: 52px;">Oficina de Registraduria Virtual</h1>
+            <p class="lead text-center">
+                Bienvenidos a la oficina de Registraduria Virtual. Favor entre su número de estudiante o empleado para
+                accesar la página.
+            </p>
+            <hr class="my-4">
+
+            <div class="display-4" style="text-align:center">
+                <input class="user" type="text" asp-for="@Model.idNumberInput" value=" "
+                       style="font-size:25px; border: 2px solid black;
+               border-radius: 2px;" placeholder="ID" required />
+
+                <button type="submit" style=" margin-left:20px; padding-top:20px;" class="btnDsg"><b>Login</b></button>
+
+            </div>
+
+    </form>
+
+</body>
+</html>
