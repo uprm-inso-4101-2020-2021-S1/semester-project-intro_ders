@@ -31,7 +31,7 @@ namespace intro_durs.Pages.Application
 
         public async Task<IActionResult> OnGetAsync()
         {
-            ViewData["Tbl"] = _context.getCopiaDeDiplomaReports().Result;
+            ViewData["TblCopiaDeDiploma"] = _context.getCopiaDeDiplomaReports().Result;
 
 
 

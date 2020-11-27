@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace intro_durs.Pages.Application
 {
-    public class registerFormModel : PageModel
+    public class PasosASeguirModel : PageModel
     {
         public void OnGet()
         {

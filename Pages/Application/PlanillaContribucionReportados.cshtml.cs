@@ -32,7 +32,7 @@ namespace intro_durs.Pages.Application
 
         public async Task<IActionResult> OnGetAsync()
         {
-            ViewData["Tbl"] = _context.getPlanillaContribucionReports().Result;
+            ViewData["TblPlanillaContribucion"] = _context.getPlanillaContribucionReports().Result;
 
 
 

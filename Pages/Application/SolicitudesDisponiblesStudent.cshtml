@@ -1,5 +1,5 @@
 ﻿@page
-@model intro_durs.Pages.Application.registerFormModel
+@model intro_durs.Pages.Application.formListModel
 @{
 }
 
@@ -10,9 +10,6 @@
     <title></title>
 
     <style>
-
-
-
 
         /*basic reset*/
         * {
@@ -126,17 +123,13 @@
 
         <!-- fieldsets -->
         <fieldset>
-            <h1>Registro de Solicitudes</h1>
+            <h1>Solicitudes Disponibles</h1>
             <p>&nbsp;</p>
             <label id="studentID" style="margin-left:50px" type="text"></label>
             <div class="form-row">
 
                 <div class="form-group col-md-6">
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Autorización para Tomar Cursos en Otras Instituciones</button>
-
-                    <a href="certificacionEstudiante"
-                        <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Estudiante Regular</button>
-                    </a>
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Graduación</button>
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Código de Acceso</button>
@@ -145,11 +138,10 @@
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Solicitud de Graduación</button>
 
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Solicitud de Readmisión o Readmisión y Traslado Externo</button>
-
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Traslado Externo</button>
+                    <button type="submit" id="btnSometer" name="button" value="SometerDiferimiento" style="margin-bottom:15%;" class="btnDsgFL">Solicitud de Diferimiento de Préstamo</button>
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Traslado Interno, Reclasificación, Cambio de Facultad</button>
+                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Traslado Externo</button>
 
                 </div>
 
@@ -158,19 +150,18 @@
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Progreso Académico</button>
 
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Planilla de Contribución</button>
+                    <button type="submit" id="btnSometer" name="button" value="SometerPlanilla" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Planilla de Contribución</button>
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Revalida</button>
 
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Copia de Diploma</button>
+                    <button type="submit" id="btnSometer" name="button" value="SometerCopiaDiploma" style="margin-bottom:15%;" class="btnDsgFL">Copia de Diploma</button>
 
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Solicitud de Graduación Tardía</button>
+                    <button type="submit" id="btnSometer" name="button" value="SometerCertificacionEstudiante" style="margin-bottom:15%;" class="btnDsgFL">Certificación de Estudiante Regular</button>
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Solicitud de Readmisión o Readmisión y Traslado Externo Tardía</button>
 
                     <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Traslado Externo Tardía</button>
 
-                    <button type="submit" id="btnSometer" name="button" value="Someter" style="margin-bottom:15%;" class="btnDsgFL">Traslado Interno, Reclasificación, Cambio de Facultad Tardía</button>
 
                 </div>
 

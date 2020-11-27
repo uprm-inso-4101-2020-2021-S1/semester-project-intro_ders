@@ -33,11 +33,11 @@ namespace intro_durs.Pages.Application
             {
                 if (resultIDType[0].typeCount != 0)   //check if is an student
                 {
-                    return RedirectToPage("/Application/HomePage");
+                    return RedirectToPage("/Application/SolicitudesDisponiblesStudent");
 
                 }
 
-                return RedirectToPage("/Application/loginPage");
+                return RedirectToPage("/Application/RegistrodeSolicitudesEmployee");
 
 
             }

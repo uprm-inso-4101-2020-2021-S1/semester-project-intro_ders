@@ -24,8 +24,6 @@ namespace intro_durs.Pages.Models
 
         public virtual DbSet<tblDiferimiento> tblDiferimiento { get; set; }
 
-        /* STORE PROCEDURES */
-
         /* INSERT DATA TABLES*/
 
         public Boolean insertDataForm(tblForm tblForm)
@@ -45,7 +43,7 @@ namespace intro_durs.Pages.Models
 
 
         /* STORE PROCEDURES */
-        /*public DbQuery<spLoginPage> spLoginPage { get; set; }
+       public DbQuery<spLoginPage> spLoginPage { get; set; }
 
         public async Task<List<spLoginPage>> getIDNumber(int intID)
         {
@@ -79,7 +77,7 @@ namespace intro_durs.Pages.Models
 
             return result;
         }
-        */
+     
         public DbQuery<spCopiaDeDiploma> spCopiaDeDiploma { get; set; }
 
         public async Task<List<spCopiaDeDiploma>> getCopiaDeDiplomaReports()
@@ -176,62 +174,6 @@ namespace intro_durs.Pages.Models
 
 
 
-        /* STORE PROCEDURES */
-        public DbQuery<spLoginPage> spLoginPage { get; set; }
-
-        public async Task<List<spLoginPage>> getIDNumber(int intID)
-        {
-
-            var query = @"
-                DECLARE @RC int
-
-                EXECUTE @RC = spLoginPage 
-                  @idNumber";
-
-            var result = await spLoginPage.FromSqlRaw(query, new SqlParameter("@idNumber", intID)).ToListAsync();
-
-            return result;
-        }
 
 
-
-
-        public DbQuery<spUserType> spUserType { get; set; }
-
-        public async Task<List<spUserType>> getIDType(int intID)
-        {
-
-            var query = @"
-                DECLARE @RC int
-
-                EXECUTE @RC = spUserType 
-                  @IDNumber";
-
-            var result = await spUserType.FromSqlRaw(query, new SqlParameter("@IDNumber", intID)).ToListAsync();
-
-            return result;
-        }
-
-
-
-
-        public DbQuery<sptblForm> sptblForm { get; set; }
-
-        public async Task<List<sptblForm>> getTableReports()
-        {
-
-            var query = @"
-                DECLARE @RC int
-
-                EXECUTE @RC = sptblForm";
-
-            var result = await sptblForm.FromSqlRaw(query).ToListAsync();
-
-            return result;
-        }
-
-
-
-
-    }
 }
